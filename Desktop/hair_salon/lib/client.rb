@@ -14,7 +14,7 @@ attr_reader(:name, :stylist_id, :id)
       name = client.fetch('name')
       stylist_id = client.fetch('stylist_id')
       id = client.fetch('id')
-      stylists.push(Client.new({:name => name, :stylist_id => stylist_id, :id => id}))
+      clients.push(Client.new({:name => name, :stylist_id => stylist_id, :id => id}))
     end
     clients
   end

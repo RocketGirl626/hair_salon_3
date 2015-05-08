@@ -39,14 +39,14 @@ describe(Client) do
     end
   end
 
-  # describe('#save') do
-  #   it('saves a book to the books table') do
-  #     test_book = Book.new({:title => "Atlas Shrugged", :author => "Ayn Rand", :id => nil})
-  #     test_book.save()
-  #     expect(Book.all_books()).to(eq([test_book]))
-  #   end
-  # end
-  #
+  describe('#save') do
+    it('saves a client to the clients table') do
+      client = Client.new({:name => "Sarah", :stylist_id => 1, :id => nil})
+      client.save()
+      expect(Client.all()).to(eq([client]))
+    end
+  end
+
   describe('#==') do
     it('is the same client if it has the same name, stylist_id, and id') do
       client = Client.new({:name => "Sarah", :stylist_id => 1, :id => nil})
