@@ -29,16 +29,16 @@ describe(Client) do
     end
   end
 
-  # describe('.find') do
-  #   it('return a book by its id number') do
-  #     test_book = Book.new({:title => "Atlas Shrugged", :author => "Ayn Rand", :id => nil})
-  #     test_book.save()
-  #     test_book2 = Book.new({:title => "The Dark Tower", :author => "Stephen King", :id => nil})
-  #     test_book2.save()
-  #     expect(Book.find(test_book.id())).to(eq(test_book))
-  #   end
-  # end
-  #
+  describe('.find') do
+    it('return a client by its id number') do
+      client = Client.new({:name => "Sarah", :stylist_id => 1, :id => nil})
+      client.save()
+      client2 = Client.new({:name => "Stephen", :stylist_id => 2, :id => nil})
+      client2.save()
+      expect(Client.find(client.id())).to(eq(client))
+    end
+  end
+
   # describe('#save') do
   #   it('saves a book to the books table') do
   #     test_book = Book.new({:title => "Atlas Shrugged", :author => "Ayn Rand", :id => nil})
@@ -47,14 +47,14 @@ describe(Client) do
   #   end
   # end
   #
-  # describe('#==') do
-  #   it('is the same book if it has the same title, author, and id') do
-  #     test_book = Book.new({:title => "Enders Game", :author => "Orson Scott Card", :id => nil})
-  #     test_book2 = Book.new({:title => "Enders Game", :author => "Orson Scott Card", :id => nil})
-  #     expect(test_book).to(eq(test_book2))
-  #   end
-  # end
-  #
+  describe('#==') do
+    it('is the same client if it has the same name, stylist_id, and id') do
+      client = Client.new({:name => "Sarah", :stylist_id => 1, :id => nil})
+      client2 = Client.new({:name => "Sarah", :stylist_id => 1, :id => nil})
+      expect(client).to(eq(client2))
+    end
+  end
+
   # describe('#update') do
   #   it('lets you update books in the database') do
   #     test_book = Book.new({:title => 'Harry Potter', :author => 'JK Rowling', :id => nil})

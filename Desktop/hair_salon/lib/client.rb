@@ -33,7 +33,7 @@ attr_reader(:name, :stylist_id, :id)
   end
 
   define_method(:==) do |another_client|
-    self.client().==(another_client.name()).&(self.id().==(another_client.id())).&(self.stylist_id().==(another_client.stylist_id()))
+    self.name().==(another_client.name()).&(self.id().==(another_client.id())).&(self.stylist_id().==(another_client.stylist_id()))
   end
 
   define_method(:update) do |attributes|
