@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>notes</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Notes</string>
+		<key>LAST_USED</key>
+		<date>2015-05-08T16:31:10Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Notes.app/</string>
+	</dict>
+</dict>
+</plist>

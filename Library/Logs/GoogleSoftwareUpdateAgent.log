@@ -1,0 +1,12 @@
+2015-05-08 09:26:26.983 GoogleSoftwareUpdateAgent[242/0xa0f4a1d4] [lvl=2] -[KSAgentApp setupLoggerOutput] Agent settings: <KSAgentSettings:0x460d30 bundleID=com.google.Keystone.Agent lastCheck=(null) checkInterval=18000.000000 uiDisplayInterval=604800.000000 sleepInterval=1800.000000 jitterInterval=900 maxRunInterval=0.000000 isConsoleUser=1 ticketStorePath=/Users/Guest/Library/Google/GoogleSoftwareUpdate/TicketStore/Keystone.ticketstore runMode=3 daemonUpdateEngineBrokerServiceName=com.google.Keystone.Daemon.UpdateEngine daemonAdministrationServiceName=com.google.Keystone.Daemon.Administration logEverything=0 logBufferSize=2048 alwaysPromptForUpdates=0 productIDToUpdate=(null) lastUIDisplayed=(null) lastCheck=(null) alwaysShowStatusItem=0 updateCheckTag=(null) printResults=NO userInitiated=NO>
+2015-05-08 09:26:29.614 GoogleSoftwareUpdateAgent[242/0xb0219000] [lvl=2] -[KSUpdateEngine updateAllProducts] KSUpdateEngine updating all installed products.
+2015-05-08 09:26:29.614 GoogleSoftwareUpdateAgent[242/0xb0219000] [lvl=2] -[KSUpdateEngine(PrivateMethods) updateFinish] KSUpdateEngine update processing complete.
+2015-05-08 09:26:29.885 GoogleSoftwareUpdateAgent[242/0xb0219000] [lvl=3] -[KSAgentUploader fetcher:failedWithError:] Failed to upload stats to <NSMutableURLRequest https://tools.google.com/service/update2> with error Error Domain=NSURLErrorDomain Code=-1009 "The Internet connection appears to be offline." UserInfo=0x51efe0 {NSErrorFailingURLStringKey=https://tools.google.com/service/update2, _kCFStreamErrorCodeKey=8, NSErrorFailingURLKey=https://tools.google.com/service/update2, NSLocalizedDescription=The Internet connection appears to be offline., _kCFStreamErrorDomainKey=12, NSUnderlyingError=0x51e7d0 "The Internet connection appears to be offline."}
+2015-05-08 09:26:29.887 GoogleSoftwareUpdateAgent[242/0xb0219000] [lvl=3] -[KSAgentApp uploadStats:] Failed to upload stats <KSStatsCollection:0x208830 path="/Users/Guest/Library/Google/GoogleSoftwareUpdate/Stats/Keystone.stats", count=6, stats={
+    checks = 2;
+    failedchecks = 2;
+    tickets = 2;
+    usertickets = 0;
+    validtickets = 2;
+    validusertickets = 0;
+}>

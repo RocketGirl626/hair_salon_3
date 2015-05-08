@@ -1,0 +1,1 @@
+May  8 09:31:11 epicodus-13.local Notes[414] <Debug>: Registered for System Configuration dynamic store notifications with keys: (State:/Network/Global/IPv4, State:/Network/Global/IPv6, State:/Network/Global/DNS) patterns: (State:/Network/Interface/[^/]+/IPv4, State:/Network/Interface/[^/]+/IPv6)
