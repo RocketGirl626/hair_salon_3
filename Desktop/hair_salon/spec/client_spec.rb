@@ -23,12 +23,12 @@ describe(Client) do
     end
   end
 
-  # describe ('.all_books') do
-  #   it('will return empty at first') do
-  #     expect(Book.all_books()).to(eq([]))
-  #   end
-  # end
-  #
+  describe ('.all') do
+    it('will return empty at first') do
+      expect(Client.all()).to(eq([]))
+    end
+  end
+
   # describe('.find') do
   #   it('return a book by its id number') do
   #     test_book = Book.new({:title => "Atlas Shrugged", :author => "Ayn Rand", :id => nil})
