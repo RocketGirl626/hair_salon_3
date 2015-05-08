@@ -40,6 +40,14 @@ describe(Stylist) do
     end
   end
 
+  describe('#==') do
+    it('is the same stylist if it has the same name and id') do
+      test_stylist = Stylist.new({:name => "Fifi", :id => nil})
+      test_stylist2 = Stylist.new({:name => "Fifi", :id => nil})
+      expect(test_stylist).to(eq(test_stylist2))
+    end
+  end
+
 
 
 
