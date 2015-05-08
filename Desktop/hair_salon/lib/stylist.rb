@@ -42,9 +42,4 @@ attr_reader(:name, :id)
   define_method(:delete) do
     DB.exec("DELETE FROM stylists WHERE id = #{self.id()};")
   end
-
-
-
-
-
 end
