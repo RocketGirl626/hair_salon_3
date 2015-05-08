@@ -55,15 +55,15 @@ describe(Client) do
     end
   end
 
-  # describe('#update') do
-  #   it('lets you update books in the database') do
-  #     test_book = Book.new({:title => 'Harry Potter', :author => 'JK Rowling', :id => nil})
-  #     test_book.save()
-  #     test_book.update({:title => 'Harry Putter'})
-  #     expect(test_book.title()).to(eq('Harry Putter'))
-  #   end
-  # end
-  #
+  describe('#update') do
+    it('lets you update client in the database') do
+      client = Client.new({:name => "Sarah", :stylist_id => 1, :id => nil})
+      client.save()
+      client.update({:name => 'Stephen'})
+      expect(client.name()).to(eq('Stephen'))
+    end
+  end
+
   # describe('#delete') do
   #   it('lets you delete a movie from the database') do
   #     test_book = Book.new({:title => 'Harry Putter', :author => 'JK Rowling', :id => nil})
