@@ -4,18 +4,18 @@ describe(Client) do
 
   describe('#name') do
     it('will return the name of the client') do
-      client = Client.new({:name => "Sarah", :stylist_id => "1", :id => nil})
+      client = Client.new({:name => "Sarah", :stylist_id => 1, :id => nil})
       expect(client.name()).to(eq("Sarah"))
     end
   end
-  #
-  # describe('#author') do
-  #   it('will return the author of a book') do
-  #     book = Book.new({:title => "Harry Potter", :author => "JK Rowling", :id => nil})
-  #     expect(book.author()).to(eq("JK Rowling"))
-  #   end
-  # end
-  #
+
+  describe('#stylist_id') do
+    it('will return the stylist_id of the client') do
+      client = Client.new({:name => "Sarah", :stylist_id => 1, :id => nil})
+      expect(client.stylist_id()).to(eq(1))
+    end
+  end
+
   # describe('#id') do
   #   it('will return the id of a book') do
   #     book = Book.new({:title => "Harry Potter", :author => "JK Rowling", :id => nil})
