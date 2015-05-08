@@ -64,16 +64,16 @@ describe(Client) do
     end
   end
 
-  # describe('#delete') do
-  #   it('lets you delete a movie from the database') do
-  #     test_book = Book.new({:title => 'Harry Putter', :author => 'JK Rowling', :id => nil})
-  #     test_book.save()
-  #     test_book2 = Book.new({:title => 'Lord Of The Rings', :author => 'JRR Tolkien', :id => nil})
-  #     test_book2.save()
-  #     test_book.delete()
-  #     expect(Book.all_books()).to(eq([test_book2]))
-  #   end
-  # end
+  describe('#delete') do
+    it('lets you delete a client from the database') do
+      client = Client.new({:name => "Sarah", :stylist_id => 1, :id => nil})
+      client.save()
+      client2 = Client.new({:name => "Stephen", :stylist_id => 2, :id => nil})
+      client2.save()
+      client.delete()
+      expect(Client.all()).to(eq([client2]))
+    end
+  end
 
 
 end
