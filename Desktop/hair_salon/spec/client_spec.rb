@@ -16,13 +16,13 @@ describe(Client) do
     end
   end
 
-  # describe('#id') do
-  #   it('will return the id of a book') do
-  #     book = Book.new({:title => "Harry Potter", :author => "JK Rowling", :id => nil})
-  #     expect(book.id()).to(be_an_instance_of(Fixnum))
-  #   end
-  # end
-  #
+  describe('#id') do
+    it('will return the id of a client') do
+      client = Client.new({:name => "Sarah", :stylist_id => 1, :id => nil})
+      expect(client.id()).to(be_an_instance_of(Fixnum))
+    end
+  end
+
   # describe ('.all_books') do
   #   it('will return empty at first') do
   #     expect(Book.all_books()).to(eq([]))
